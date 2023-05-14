@@ -18,6 +18,8 @@ defmodule GlobeTimerWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    live "/timezones", TimezonesLive
   end
 
   # Other scopes may use custom stacks.
